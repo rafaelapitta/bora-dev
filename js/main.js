@@ -10,7 +10,7 @@ setInterval(function () {
     let diferencaData = dataEvento - dataHoje
 
     let restDias = Math.floor(diferencaData / (1000 * 60 * 60 * 24))
-    let restHoras = Math.floor(diferencaData / (1000 * 60 * 60) - 48)
+    let restHoras = Math.floor(diferencaData / (1000 * 60 * 60) % 24)
     let restMinutes = Math.floor((diferencaData / (1000 * 60)) % 60)
     let restSeconds = Math.floor((diferencaData % (1000 * 60)) / 1000)
 

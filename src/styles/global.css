@@ -84,11 +84,36 @@ input {
 
 #section-three {
     text-align: center;
-    color: var(--color-background) ;
+}
+
+#section-three h2 {
+    font-size: 2rem;
+    color: #F26419;
+}
+
+.card-guests {
+    background: linear-gradient(210.55deg, #353A40 -3.02%, #121416 93.08%);
+    box-shadow: 36px 12px 36px rgba(2, 3, 3, 0.7), -12px -20px 56px rgba(232, 237, 243, 0.05), inset -16px -6px 80px rgba(248, 249, 249, 0.03);
+    border-radius: 24px;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.card-guests h3 {
+    color: #ffffff;
+    margin-top: -20px;
+    margin-left: -10px;
 }
 
 .guests{
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+}
+
+.setas {
+    width: 500px;
+    height: 20px;
+    border: solid 1px #ffffff;
+    border-bottom: none;
 }

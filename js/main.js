@@ -14,8 +14,8 @@ setInterval(function () {
     let restMinutes = Math.floor((diferencaData / (1000 * 60)) % 60)
     let restSeconds = Math.floor((diferencaData % (1000 * 60)) / 1000)
 
-    dias.innerHTML = restDias + ":" 
-    horas.innerHTML = restHoras + ":"
+    dias.innerHTML =  restDias + ":" 
+    horas.innerHTML = "0" + restHoras + ":"
     minutos.innerHTML = restMinutes + ":"
     segundos.innerHTML = restSeconds 
 }, 1000)

@@ -86,8 +86,8 @@ input {
     text-align: center;
 }
 
-#section-three h2 {
-    font-size: 2rem;
+#section-three h2, #section-four h2 {
+    font-size: 2.5rem;
     color: #F26419;
 }
 
@@ -116,4 +116,9 @@ input {
     height: 20px;
     border: solid 1px #ffffff;
     border-bottom: none;
+}
+
+#section-four {
+    padding: 50px;
+    color: #f4f4f4;
 }

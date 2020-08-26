@@ -4,6 +4,7 @@
 }
 
 body {
+    overflow-x: hidden;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -25,11 +26,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#menu-content img {
-    width: 130px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .menu {
@@ -38,14 +35,9 @@ a:hover {
     justify-content: space-evenly;
 }
 
-#section-content {
-    display: flex;
-    padding-left: 50px;
-}
-
 .container {
-    width: 20%;
     display: flex;
+    justify-content: center;
 }
 
 .container div {
@@ -56,8 +48,12 @@ a:hover {
 .horas,
 .minutos,
 .segundos {
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: 0;
+}
+
+.formulario {
+    text-align: center;
 }
 
 .formulario h1 {
@@ -69,14 +65,19 @@ a:hover {
     align-content: center;
 }
 
-.img-dev {
-    width: 75%;
+.img-dev-mobile {
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
 }
 
+.img-dev-desktop {
+   display: none;
+}
+
 .div-btn {
     display: flex;
+    justify-content: center;
 }
 
 .btn-form {
@@ -105,20 +106,21 @@ a:hover {
     background: linear-gradient(210.55deg, #353A40 -3.02%, #121416 93.08%);
     box-shadow: 36px 12px 36px rgba(2, 3, 3, 0.7), -12px -20px 56px rgba(232, 237, 243, 0.05), inset -16px -6px 80px rgba(248, 249, 249, 0.03);
     border-radius: 24px;
-    align-items: center;
-    padding-left: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
 }
 
 .card-guests h3 {
     color: #ffffff;
     margin-top: -20px;
-    margin-left: -10px;
 }
 
 .guests{
     display: flex;
     justify-content: space-evenly;
-    text-align: center;
 }
 
 .setas {
@@ -134,7 +136,51 @@ small {
     margin-right: auto;
 }
 
+.side-card {
+    display: none;
+}
+
 #section-four {
     padding: 50px;
     color: #f4f4f4;
+}
+
+
+@media (min-width: 992px) {
+    .card-guests {
+        text-align: center;
+    }
+
+    .boys {
+        display: flex;
+        text-align: center;
+    }
+
+    .side-card {
+        display: block;
+    }
+
+    #section-content {
+        display: flex;
+        padding-left: 50px;
+    }
+
+    .dias,
+    .horas,
+    .minutos,
+    .segundos {
+    font-size: 5rem;
+    margin-bottom: 0;
+    }
+
+    .img-dev-desktop {
+        display: block;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+     .img-dev-mobile {
+        display: none;
+    }
 }

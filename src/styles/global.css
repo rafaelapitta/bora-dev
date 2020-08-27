@@ -23,8 +23,9 @@ a:hover {
 }
 
 #menu-content {
-    text-align: center;
-    margin-top: 20px;
+    position: absolute;
+    margin-left: 45px;
+    margin-top: 197px;
 }
 
 .menu {
@@ -51,10 +52,12 @@ a:hover {
 
 .formulario {
     text-align: center;
+   justify-content: center;
 }
 
 .formulario h1 {
     color: var(--color-background);
+    padding: 10px;
 }
 
 .div-img {
@@ -65,11 +68,10 @@ a:hover {
 .img-dev-mobile {
     width: 65%;
     margin-left: auto;
-    margin-right: auto;
 }
 
 .img-dev-desktop {
-   display: none;
+    display: none;
 }
 
 .div-btn {
@@ -97,6 +99,7 @@ a:hover {
 #section-three h2, #section-four h2 {
     font-size: 2.5rem;
     color: #F26419;
+    margin-bottom: 0;
 }
 
 .card-guests {
@@ -177,7 +180,7 @@ small {
 @media (min-width: 992px) {
     #menu-content {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         margin-top: 20px;
     }
@@ -202,26 +205,31 @@ small {
     #section-content {
         display: flex;
         padding-left: 50px;
-        margin-top: 40px;
+        align-items: center;
     }
 
     .dias,
     .horas,
     .minutos,
     .segundos {
-    font-size: 5rem;
+    font-size: 6rem;
     margin-bottom: 0;
     }
 
     .img-dev-desktop {
         display: block;
-        width: 75%;
+        width: 90%;
         margin-left: auto;
-        margin-right: auto;
     }
 
-     .img-dev-mobile {
+    .img-dev-mobile {
         display: none;
+    }
+
+    #menu-content {
+        position: absolute;
+        text-align: center;
+        margin-left: 180px;
     }
 }
 

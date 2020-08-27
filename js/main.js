@@ -21,7 +21,7 @@ setInterval(function () {
 }, 1000)
 
 
-function popupSaida(event) {
+function popupSaida() {
     // Show the popup
     document.getElementById("popup").style.display = "block";
 }

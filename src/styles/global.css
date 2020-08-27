@@ -117,7 +117,8 @@ a:hover {
 
 .guests{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .setas {
@@ -189,13 +190,13 @@ small {
         text-align: center;
     }
 
-    .boys {
+    .profiles {
         display: flex;
         text-align: center;
     }
 
     .side-card {
-        display: block;
+        display: flex;
     }
 
     #section-content {
@@ -220,6 +221,12 @@ small {
     }
 
      .img-dev-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 1400px) {
+    .side-card {
         display: none;
     }
 }

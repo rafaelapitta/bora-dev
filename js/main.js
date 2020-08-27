@@ -31,10 +31,3 @@ document.addEventListener("mouseleave", popupSaida);
 function fechaPopup(){
     document.getElementById("popup").style.display = "none";
 }
-
-
-
-
-
-
-

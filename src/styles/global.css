@@ -201,6 +201,7 @@ small {
     #section-content {
         display: flex;
         padding-left: 50px;
+        margin-top: 40px;
     }
 
     .dias,

@@ -15,10 +15,18 @@ setInterval(function () {
     let restSeconds = Math.floor((diferencaData % (1000 * 60)) / 1000)
 
     dias.innerHTML =  restDias + ":" 
-    horas.innerHTML = "0" + restHoras + ":"
+    horas.innerHTML = restHoras + ":"
     minutos.innerHTML = restMinutes + ":"
     segundos.innerHTML = restSeconds 
 }, 1000)
+
+
+function popupSaida(event) {
+    // Show the popup
+    document.getElementById("popup").style.display = "block";
+}
+
+document.addEventListener("mouseleave", popupSaida);
 
 
 

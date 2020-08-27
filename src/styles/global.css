@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Noto+Sans+JP:wght@400;500;700&display=swap');
 :root {
     --color-background: #f4f4f4;
 }
@@ -33,12 +32,12 @@ a:hover {
     justify-content: space-evenly;
 }
 
-.container {
+.contador {
     display: flex;
     justify-content: center;
 }
 
-.container div {
+.contador div {
     text-align: center;
 }
 
@@ -50,12 +49,12 @@ a:hover {
     margin-bottom: 0;
 }
 
-.formulario {
+.main-info {
     text-align: center;
-   justify-content: center;
+    justify-content: center;
 }
 
-.formulario h1 {
+.main-info h1 {
     color: var(--color-background);
     padding: 10px;
 }
@@ -147,6 +146,16 @@ small {
 }
 
 /* POP-UP DE SAÍDA */
+.close-popup {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    display: flex;
+    float: right;
+    background-color: #ececec;
+    border-radius: 3px;
+
+}
 
 #popup {
     display: none;
@@ -167,15 +176,15 @@ small {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 18px;
     margin: 100px auto;
-    max-width: 100%;
+    max-width: 60%;
     padding: 20px;
     width: 500px;
     text-align: center;
-    padding: 50px;
+    padding: 20px 50px;
+    padding-bottom: 50px;
     border-radius: 25px;
     color: #353535;
 }
-
 
 @media (min-width: 992px) {
     #menu-content {
@@ -187,19 +196,6 @@ small {
 
     .menu {
         width: 50%;
-    }
-
-    .card-guests {
-        text-align: center;
-    }
-
-    .profiles {
-        display: flex;
-        text-align: center;
-    }
-
-    .side-card {
-        display: flex;
     }
 
     #section-content {
@@ -230,6 +226,23 @@ small {
         position: absolute;
         text-align: center;
         margin-left: 180px;
+    }
+
+    .card-guests {
+        text-align: center;
+    }
+
+    .profiles {
+        display: flex;
+        text-align: center;
+    }
+
+    .side-card {
+        display: flex;
+    }
+
+    .container_popup {
+        max-width: 100%;
     }
 }
 

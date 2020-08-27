@@ -147,6 +147,16 @@ small {
 }
 
 /* POP-UP DE SAÍDA */
+.close-popup {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    display: flex;
+    float: right;
+    background-color: #ececec;
+    border-radius: 3px;
+
+}
 
 #popup {
     display: none;
@@ -167,13 +177,18 @@ small {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 18px;
     margin: 100px auto;
-    max-width: 100%;
+    max-width: 60%;
     padding: 20px;
     width: 500px;
     text-align: center;
-    padding: 50px;
+    padding: 20px 50px;
+    padding-bottom: 50px;
     border-radius: 25px;
     color: #353535;
+}
+
+.container_popup .close-popup {
+   
 }
 
 
@@ -230,6 +245,10 @@ small {
         position: absolute;
         text-align: center;
         margin-left: 180px;
+    }
+
+    .container_popup {
+        max-width: 100%;
     }
 }
 

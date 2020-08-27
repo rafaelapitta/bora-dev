@@ -21,12 +21,18 @@ setInterval(function () {
 }, 1000)
 
 
-function popupSaida() {
+function popupSaida(){
     // Show the popup
     document.getElementById("popup").style.display = "block";
 }
 
 document.addEventListener("mouseleave", popupSaida);
+
+function fechaPopup(){
+    document.getElementById("popup").style.display = "none";
+}
+
+
 
 
 

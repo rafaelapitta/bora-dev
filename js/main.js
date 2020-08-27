@@ -21,6 +21,14 @@ setInterval(function () {
 }, 1000)
 
 
+function popupSaida(event) {
+    // Show the popup
+    document.getElementById("popup").style.display = "block";
+}
+
+document.addEventListener("mouseleave", popupSaida);
+
+
 
 
 

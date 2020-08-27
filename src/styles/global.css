@@ -142,6 +142,36 @@ small {
     color: #f4f4f4;
 }
 
+/* POP-UP DE SAÍDA */
+
+#popup {
+    display: none;
+}
+
+.overlay_popup {
+    background: rgba(0, 0, 0, .75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.container_popup {
+    background: #fff;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    margin: 100px auto;
+    max-width: 100%;
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+    padding: 50px;
+    border-radius: 25px;
+    color: #353535;
+}
+
 
 @media (min-width: 992px) {
     #menu-content {
